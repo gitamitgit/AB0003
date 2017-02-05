@@ -2,7 +2,7 @@
 <config>
     <modules>
         <A2bizz_Designersoftware>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </A2bizz_Designersoftware>
     </modules>
     <frontend>
@@ -18,7 +18,7 @@
         <layout>
             <updates>
                 <designersoftware>
-                    <file>inky/a2bizz_designersoftware.xml</file>
+                    <file>a2bizz/a2bizz_designersoftware.xml</file>
                 </designersoftware>
             </updates>
         </layout>
@@ -26,7 +26,7 @@
 			<modules>
 				<A2bizz_Designersoftware>
 					<files>
-						<default>inky/A2bizz_Designersoftware.csv</default>
+						<default>a2bizz/A2bizz_Designersoftware.csv</default>
 					</files>
 				</A2bizz_Designersoftware>
 			</modules>
@@ -36,7 +36,7 @@
 		<layout>
 			<updates>
 				<designersoftware>
-					<file>inky/a2bizz_designersoftware.xml</file>
+					<file>a2bizz/a2bizz_designersoftware.xml</file>
 				</designersoftware>
 			</updates>
 		</layout>
@@ -64,7 +64,7 @@
                     <designersoftware>
                         <table>a2bizz_designersoftware</table>
                     </designersoftware>
-                    
+                                        
                     <angles>
                         <table>a2bizz_angles</table>
                     </angles>

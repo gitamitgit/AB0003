@@ -1,0 +1,9 @@
+a:5:{i:0;s:224:"Error in file: "/var/www/html/AB0003/app/code/local/A2bizz/Designersoftware/sql/designersoftware_setup/mysql4-install-0.1.0.php" - SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'a2bizz_angles' already exists";i:1;s:916:"#0 /var/www/html/AB0003/app/code/core/Mage/Core/Model/Resource/Setup.php(644): Mage::exception('Mage_Core', 'Error in file: ...')
+#1 /var/www/html/AB0003/app/code/core/Mage/Core/Model/Resource/Setup.php(421): Mage_Core_Model_Resource_Setup->_modifyResourceDb('install', '', '0.1.0')
+#2 /var/www/html/AB0003/app/code/core/Mage/Core/Model/Resource/Setup.php(327): Mage_Core_Model_Resource_Setup->_installResourceDb('0.1.0')
+#3 /var/www/html/AB0003/app/code/core/Mage/Core/Model/Resource/Setup.php(235): Mage_Core_Model_Resource_Setup->applyUpdates()
+#4 /var/www/html/AB0003/app/code/core/Mage/Core/Model/App.php(428): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#5 /var/www/html/AB0003/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Model_App->_initModules()
+#6 /var/www/html/AB0003/app/Mage.php(683): Mage_Core_Model_App->run(Array)
+#7 /var/www/html/AB0003/index.php(83): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:73:"/AB0003/index.php/admin/cache/index/key/959e168a8d369311241a04c0069f3cc0/";s:11:"script_name";s:17:"/AB0003/index.php";s:4:"skin";s:7:"default";}

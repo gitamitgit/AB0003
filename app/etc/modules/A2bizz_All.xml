@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+		<A2bizz_Catalog>
+            <active>false</active>
+            <codePool>local</codePool>
+        </A2bizz_Catalog>
+		<A2bizz_Checkout>
+            <active>false</active>
+            <codePool>local</codePool>
+        </A2bizz_Checkout>
+        <A2bizz_Customer>
+            <active>false</active>
+            <codePool>local</codePool>
+        </A2bizz_Customer>
+        <A2bizz_Designersoftware>
+            <active>true</active>
+            <codePool>local</codePool>
+        </A2bizz_Designersoftware>
+        <A2bizz_Savedesign>
+            <active>false</active>
+            <codePool>local</codePool>
+             <depends>
+                <Mage_Wishlist /><!-- so the config is loaded after the one from Mage_Wishlist -->
+            </depends>
+        </A2bizz_Savedesign>
+    </modules>
+</config> 
