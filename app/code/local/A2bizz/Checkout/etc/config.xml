@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <A2bizz_Checkout>
+            <version>0.1.0</version>
+        </A2bizz_Checkout>
+    </modules>
+    <frontend>
+        <routers>
+            <checkout>
+                <args>
+                    <modules>
+                        <a2bizz_checkout before="Mage_Checkout">A2bizz_Checkout</a2bizz_checkout><!--Change Inky To Your Module NameSpace and Checkout to Your Module name-->
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
+         <events>
+            <checkout_cart_product_add_after>
+                <observers>
+                    <a2bizz_cart_product_add_after>
+						<type>model</type>
+                        <class>a2bizz_checkout/observer</class>
+                        <method>changePrice</method>
+                    </a2bizz_cart_product_add_after>
+                </observers>
+            </checkout_cart_product_add_after> 
+            <checkout_onepage_controller_success_action>
+                <observers>
+                    <a2bizz_checkout_onepage_controller_success_action>
+						<type>model</type>
+                        <class>a2bizz_checkout/observer</class>
+                        <method>addDesign</method>
+                    </a2bizz_checkout_onepage_controller_success_action>
+                </observers>
+            </checkout_onepage_controller_success_action>           
+        </events>
+    </frontend>
+    <global>        
+        <models>
+            <a2bizz_checkout>
+                <class>A2bizz_Checkout_Model</class>
+            </a2bizz_checkout>
+        </models>       
+    </global>
+</config>

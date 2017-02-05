@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <A2bizz_Customer>
+            <version>0.1.0</version>
+        </A2bizz_Customer>
+    </modules>
+    <frontend>
+        <routers>
+            <customer>
+                <args>
+                    <modules>
+                        <a2bizz_customer before="Mage_Customer">A2bizz_Customer</a2bizz_customer><!--Change Inky To Your Module NameSpace and Customer to Your Module name-->
+                    </modules>
+                </args>
+            </customer>
+        </routers>         
+    </frontend>    
+</config>
