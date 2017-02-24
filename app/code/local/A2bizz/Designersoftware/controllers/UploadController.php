@@ -22,7 +22,7 @@ class A2bizz_Designersoftware_UploadController extends Mage_Core_Controller_Fron
 						$uploader->setFilesDispersion(false);
 						// We set media/files as Default Image Folder for Designer Software Images
 						// The below function will return directory path for saving original Image
-						// it will be like - media/inky/{{controllerName}}/original//{{filename}}
+						// it will be like - media/a2bizz/{{controllerName}}/original//{{filename}}
 						
 						$path = Mage::helper('designersoftware/image')->createModuleImageDirectories('clipart_upload','original');
 						

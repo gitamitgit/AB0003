@@ -46,7 +46,7 @@
         <layout>
             <updates>
                 <savedesign>
-                    <file>inky/a2bizz_savedesign.xml</file>
+                    <file>a2bizz/a2bizz_savedesign.xml</file>
                 </savedesign>
             </updates>
         </layout>

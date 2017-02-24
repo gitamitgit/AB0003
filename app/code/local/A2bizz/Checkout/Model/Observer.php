@@ -71,13 +71,13 @@ class A2bizz_Checkout_Model_Observer  {
 						$connection->insert('a2bizz_orders_design', $fields);  
 						$connection->commit();
 						
-						$srcPath 	= Mage::getBaseDir('media').DS.'inky'.DS.'designs'.DS.$designCollection['style_design_code'].DS.'original'; 
+						$srcPath 	= Mage::getBaseDir('media').DS.'a2bizz'.DS.'designs'.DS.$designCollection['style_design_code'].DS.'original'; 
 						
-						$dirName 	= Mage::getBaseDir('media').DS.'inky'.DS.'orders';						
+						$dirName 	= Mage::getBaseDir('media').DS.'a2bizz'.DS.'orders';						
 						$this->createDirectory($dirName);
-						$dirName 	= Mage::getBaseDir('media').DS.'inky'.DS.'orders'.DS.$designCollection['style_design_code'];						
+						$dirName 	= Mage::getBaseDir('media').DS.'a2bizz'.DS.'orders'.DS.$designCollection['style_design_code'];						
 						$this->createDirectory($dirName);
-						$destPath 	= Mage::getBaseDir('media').DS.'inky'.DS.'orders'.DS.$designCollection['style_design_code'].DS.'original';						
+						$destPath 	= Mage::getBaseDir('media').DS.'a2bizz'.DS.'orders'.DS.$designCollection['style_design_code'].DS.'original';						
 						$this->createDirectory($destPath);
 						
 						$anglesCollection 	= Mage::getModel('designersoftware/angles')->getAnglesCollection();														

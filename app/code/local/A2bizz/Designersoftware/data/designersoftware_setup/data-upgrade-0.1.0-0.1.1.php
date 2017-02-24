@@ -74,9 +74,8 @@ $designersoftwareAngles = array(
 );
 
 /**
- * Insert default and system pages
+ * Insert default angles provided
  */
 foreach ($designersoftwareAngles as $data) {
     Mage::getModel('designersoftware/angles')->setData($data)->save();
 }
-

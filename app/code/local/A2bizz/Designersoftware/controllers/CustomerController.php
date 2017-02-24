@@ -41,23 +41,23 @@ class A2bizz_Designersoftware_CustomerController extends Mage_Core_Controller_Fr
 		$productId 			= $designCollection->getProductId();		
 		$priceInfoArr 		= unserialize($designCollection->getPriceInfoArr()); 
 		$logo 				= Mage::getStoreConfig('design/header/logo_src');		
-		$logoFullPath 		= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . DS . "frontend" . DS . "rwd" . DS . "inky1003" . DS . $logo;
+		$logoFullPath 		= Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . DS . "frontend" . DS . "rwd" . DS . "a2bizz1003" . DS . $logo;
 		
 		//Customer Name
 		$customerId 		= $designCollection->getCustomerId();
 		$customerCollection = Mage::getModel('customer/customer')->load($customerId);
 		$customerName 		= $customerCollection->getName();
 		
-		$dirName = Mage::getBaseDir('media') . "/inky/customer";
+		$dirName = Mage::getBaseDir('media') . "/a2bizz/customer";
 		Mage::helper('designersoftware/customer_pdf')->createDirectory($dirName); // Create First Level Directory	
-		$dirName = Mage::getBaseDir('media') . "/inky/customer/pdf";
+		$dirName = Mage::getBaseDir('media') . "/a2bizz/customer/pdf";
 		Mage::helper('designersoftware/customer_pdf')->createDirectory($dirName); // Create second Level Directory			
 		
 		$counterV = 1;
 		$myCon=1;			
 		
 		foreach($anglesCollection as $angles):
-			$images[] = Mage::getBaseDir('media')."/inky/designs/".$styleDesignCode."/original/".$angles->getTitle().".png";
+			$images[] = Mage::getBaseDir('media')."/a2bizz/designs/".$styleDesignCode."/original/".$angles->getTitle().".png";
 		endforeach;		
 		
 		$pageCreator	= 612;	
@@ -186,16 +186,16 @@ class A2bizz_Designersoftware_CustomerController extends Mage_Core_Controller_Fr
 		$productId 		= $designCollection->getProductId();  
 		$priceInfoArr 	= unserialize($designCollection->getPriceInfoArr());  
 		
-		$dirName = Mage::getBaseDir('media') . "/inky/customer";
+		$dirName = Mage::getBaseDir('media') . "/a2bizz/customer";
 		Mage::helper('designersoftware/customer_pdf')->createDirectory($dirName); // Create First Level Directory	
-		$dirName = Mage::getBaseDir('media') . "/inky/customer/pdf";
+		$dirName = Mage::getBaseDir('media') . "/a2bizz/customer/pdf";
 		Mage::helper('designersoftware/customer_pdf')->createDirectory($dirName); // Create second Level Directory			
 		
 		$counterV = 1;
 		$myCon=1;			
 		
 		foreach($anglesCollection as $angles):
-			$images[] = Mage::getBaseDir('media')."/inky/designs/".$styleDesignCode."/original/".$angles->getTitle().".png";
+			$images[] = Mage::getBaseDir('media')."/a2bizz/designs/".$styleDesignCode."/original/".$angles->getTitle().".png";
 		endforeach;	
 		
 		

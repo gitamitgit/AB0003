@@ -13,14 +13,14 @@ class A2bizz_Designersoftware_PdfController extends Mage_Core_Controller_Front_A
 		echo "Testing Image Magic Chinese :";
 		/*exec('/usr/bin/convert 
 				-pointsize 12 -background none -fill "#000000" 
-				-font "/var/www/html/jbcases/media/inky/font/ttf/font_chinese.ttf" 
+				-font "/var/www/html/jbcases/media/a2bizz/font/ttf/font_chinese.ttf" 
 				-gravity west label:"范围" 
-				-trim /var/www/html/jbcases/media/inky/pdf/designimage/area.png');	
+				-trim /var/www/html/jbcases/media/a2bizz/pdf/designimage/area.png');	
 		*/
 		
 		//exec("/usr/bin/convert -size 100x100 xc:white /var/www/html/jbcases/media/canvas.jpg");
 		
-		exec('/usr/bin/convert -pointsize 16 -background none -fill "#000000" -font "/var/www/html/jbcases/media/inky/font/ttf/font_chinese.ttf" -gravity west label:"范围" -trim /var/www/html/jbcases/media/inky/pdf/designimage/area.png');	
+		exec('/usr/bin/convert -pointsize 16 -background none -fill "#000000" -font "/var/www/html/jbcases/media/a2bizz/font/ttf/font_chinese.ttf" -gravity west label:"范围" -trim /var/www/html/jbcases/media/a2bizz/pdf/designimage/area.png');	
 	
 	}
 	   
@@ -70,7 +70,7 @@ class A2bizz_Designersoftware_PdfController extends Mage_Core_Controller_Front_A
 		
 		// Path of logo 
 		$logo 				= Mage::getStoreConfig('design/header/logo_src');
-		$logoFullPath 		= Mage::getBaseDir('skin'). DS . "frontend" . DS . "rwd" . DS . "inky1003" . DS . $logo;
+		$logoFullPath 		= Mage::getBaseDir('skin'). DS . "frontend" . DS . "rwd" . DS . "a2bizz1003" . DS . $logo;
 		
 		// Designed Images 
 		$images 			= $this->designImages($styleDesignCode, $orderId);		
@@ -230,8 +230,8 @@ class A2bizz_Designersoftware_PdfController extends Mage_Core_Controller_Front_A
 		$pdf->SetFont('Arial', '', 11); 
 		$pdf->Text(200, 600, $copyRightText);
 		
-		$designDirName 	= Mage::getBaseDir('media') . DS . "inky" . DS . "pdf"  . DS . "designimage";
-		$fontDirName 	= Mage::getBaseDir('media') . DS . "inky" . DS . "font" . DS . "ttf";
+		$designDirName 	= Mage::getBaseDir('media') . DS . "a2bizz" . DS . "pdf"  . DS . "designimage";
+		$fontDirName 	= Mage::getBaseDir('media') . DS . "a2bizz" . DS . "font" . DS . "ttf";
 		
 		$this->createDirectory($designDirName); // Create Second Level Directory
 			
@@ -392,9 +392,9 @@ class A2bizz_Designersoftware_PdfController extends Mage_Core_Controller_Front_A
 		
 		foreach($anglesCollection as $angles):
 			if($orderId>0){
-				$images[] = Mage::getBaseDir('media') . DS . "inky" . DS . "orders" . DS . $styleDesignCode . DS . "original" . DS . $angles->getTitle().'.png';
+				$images[] = Mage::getBaseDir('media') . DS . "a2bizz" . DS . "orders" . DS . $styleDesignCode . DS . "original" . DS . $angles->getTitle().'.png';
 			} else {
-				$images[] = Mage::getBaseDir('media') . DS . "inky" . DS . "designs" . DS . $styleDesignCode . DS . "original" . DS . $angles->getTitle().'.png';
+				$images[] = Mage::getBaseDir('media') . DS . "a2bizz" . DS . "designs" . DS . $styleDesignCode . DS . "original" . DS . $angles->getTitle().'.png';
 			}
 		endforeach;
 		
@@ -410,7 +410,7 @@ class A2bizz_Designersoftware_PdfController extends Mage_Core_Controller_Front_A
     
     public function getHeaderImage($basePath, $title, $titleInOtherLang){
 		$imageMagickPath= $this->__getImageMagickPath();
-		$fontDirName 	= Mage::getBaseDir('media') . DS . "inky" . DS . "font" . DS . "ttf";
+		$fontDirName 	= Mage::getBaseDir('media') . DS . "a2bizz" . DS . "font" . DS . "ttf";
 		
 		$id 			= $priceInfoArrValue->$partIden;
 		$color			= "#000000";
@@ -433,7 +433,7 @@ class A2bizz_Designersoftware_PdfController extends Mage_Core_Controller_Front_A
     // Return Image Path of a Language
     public function getFontImage($basePath, $priceInfoArrValue, $storeId, $partIden){
 		$imageMagickPath= $this->__getImageMagickPath();
-		$fontDirName 	= Mage::getBaseDir('media') . DS . "inky" . DS . "font" . DS . "ttf";
+		$fontDirName 	= Mage::getBaseDir('media') . DS . "a2bizz" . DS . "font" . DS . "ttf";
 		
 		$id 			= $priceInfoArrValue->$partIden;
 		$color			= "#000000";

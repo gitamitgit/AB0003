@@ -145,7 +145,7 @@
 		<modules>
 			<A2bizz_Designersoftware>
 				<files>
-					<default>inky/a2bizz_designersoftware.csv</default>
+					<default>a2bizz/a2bizz_designersoftware.csv</default>
 				</files>
 			</A2bizz_Designersoftware>
 		</modules>

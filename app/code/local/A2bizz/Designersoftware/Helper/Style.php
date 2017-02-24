@@ -19,7 +19,7 @@ class A2bizz_Designersoftware_Helper_Style extends Mage_Core_Helper_Abstract {
 							->getFirstItem();
 
 		//echo '<pre>';print_r($collection->getData());exit;
-		$commPath = 'media' . DS . 'inky' . DS . 'designs' . DS . $collection->getStyleDesignCode() . DS . 'original' . DS;
+		$commPath = 'media' . DS . 'a2bizz' . DS . 'designs' . DS . $collection->getStyleDesignCode() . DS . 'original' . DS;
         //$fileDirPath = Mage::getBaseDir() . DS . $commPath . '000.png';   
 	    $fileWebPath = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) . $commPath . '000.png'; 
 	    

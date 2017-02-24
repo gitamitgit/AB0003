@@ -235,8 +235,8 @@ class A2bizz_Designersoftware_Adminhtml_Parts_LayersController extends Mage_Admi
 			
 		if(in_array($partsStyleId,$arr)): //For pocket
 		
-			list($bodyOrigWidth, $bodyOrigHeight) = @(getimagesize(Mage::getBaseDir('media') . DS . 'inky/parts_layers/BSE/LAYER1/original/000.png'));																											
-			list($bodyRatioWidth, $bodyRatioHeight) = @(getimagesize(Mage::getBaseDir('media') . DS . 'inky/parts_layers/BSE/LAYER1/'.$reqWidth.'x'.$reqHeight.'/000.png'));									
+			list($bodyOrigWidth, $bodyOrigHeight) = @(getimagesize(Mage::getBaseDir('media') . DS . 'a2bizz/parts_layers/BSE/LAYER1/original/000.png'));																											
+			list($bodyRatioWidth, $bodyRatioHeight) = @(getimagesize(Mage::getBaseDir('media') . DS . 'a2bizz/parts_layers/BSE/LAYER1/'.$reqWidth.'x'.$reqHeight.'/000.png'));									
 			
 			$fixW=$bodyRatioWidth*$oWidth/$bodyOrigWidth;
 			$fixH=$bodyRatioHeight*$oHeight/$bodyOrigHeight;

@@ -14,7 +14,7 @@ class A2bizz_Designersoftware_Helper_Save_Preview extends Mage_Core_Helper_Abstr
 			//echo '<pre>';print_r($allAnglesCollection[$key]);exit;
 			$anglesCollection = $allAnglesCollection[$key];			
 			if($count==0):
-				$corePath = Mage::getBaseDir('media') . DS . 'inky';
+				$corePath = Mage::getBaseDir('media') . DS . 'a2bizz';
 				Mage::helper('designersoftware/image')->createDirectory($corePath);
 				$corePath = $corePath . DS . 'designs';
 				Mage::helper('designersoftware/image')->createDirectory($corePath);
@@ -24,8 +24,8 @@ class A2bizz_Designersoftware_Helper_Save_Preview extends Mage_Core_Helper_Abstr
 				Mage::helper('designersoftware/image')->createDirectory($orgPath);			
 				$count++;
 			else:
-				$corePath = Mage::getBaseDir('media') . DS . 'inky' . DS . 'designs' . DS . $designcode;
-				$orgPath = Mage::getBaseDir('media') . DS . 'inky' . DS . 'designs' . DS . $designcode . DS . 'original';
+				$corePath = Mage::getBaseDir('media') . DS . 'a2bizz' . DS . 'designs' . DS . $designcode;
+				$orgPath = Mage::getBaseDir('media') . DS . 'a2bizz' . DS . 'designs' . DS . $designcode . DS . 'original';
 			endif;
 			
 			$filename = $anglesCollection['title'].'.png';

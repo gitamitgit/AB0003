@@ -14,11 +14,11 @@ class A2bizz_Designersoftware_Block_Adminhtml_Parts_Edit_Tab_Form extends Mage_A
 		$disabled = false;
       endif;
       
-      $stores = Mage::helper('designersoftware/store')->getAllStores();
+      $stores = Mage::helper('designersoftware/store')->getAllStores();      
       foreach($stores as $store):
 		$storeId	= $store['store_id'];
 		$storeLabel = $store['label'];
-		  if($storeId==1):
+		  if( $storeId==1 && $this->getRequest()->getParam('id') ):
 			$disabled = true;
 		  else:
 			$disabled = false;

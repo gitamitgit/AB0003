@@ -6,7 +6,7 @@ class A2bizz_Designersoftware_Block_Adminhtml_Font_Renderer_Font extends Mage_Ad
         $data = $row->getData();
 
         $fontImage=$data['ttf_image_name'];
-        $html ='<img src="'.Mage::getBaseUrl('media') .  'inky' . DS . 'font' . DS . 'image' . DS .$fontImage.'">';
+        $html ='<img src="'.Mage::getBaseUrl('media') .  'a2bizz' . DS . 'font' . DS . 'image' . DS .$fontImage.'">';
          
         return $html;
     }

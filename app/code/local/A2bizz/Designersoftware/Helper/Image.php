@@ -2,7 +2,7 @@
 
 class A2bizz_Designersoftware_Helper_Image extends Mage_Core_Helper_Abstract
 {
-	const MAIN_DIRECTORY 		= 'inky';
+	const MAIN_DIRECTORY 		= 'a2bizz';
 	const ORIGINAL_DIRECTORY 	= 'original';
 	const THUMB_DIRECTORY 		= 'thumb';
 	const DEFAULT_ANGLE_NAME	= '000';	

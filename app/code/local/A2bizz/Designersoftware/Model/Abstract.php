@@ -93,7 +93,7 @@ abstract class A2bizz_Designersoftware_Model_Abstract extends Mage_Core_Model_Ab
 		 
 		 //$path = DS . strtolower(self::DESIGNER_PRODUCT_MAIN_DIRECTORY) . DS . strtolower(self::DESIGNER_PRODUCT_SUB_DIRECTORY) . DS . $image;
 		 //$path = DS . strtolower(self::DESIGNER_PRODUCT_MAIN_DIRECTORY) . DS . strtolower(self::DESIGNER_PRODUCT_SUB_DIRECTORY) . DS . $image;
-		 $path = DS .'inky/designs/'.$designSku.'/original/000.png';
+		 $path = DS .'a2bizz/designs/'.$designSku.'/original/000.png';
 		 
 		 return $path;
 	}

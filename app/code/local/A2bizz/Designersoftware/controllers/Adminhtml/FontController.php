@@ -124,13 +124,13 @@ class A2bizz_Designersoftware_Adminhtml_FontController extends Mage_Adminhtml_Co
 
                         // We set media as the upload dir
                         if($filename=='filename_boldttf'){
-                            $pathTTF = Mage::getBaseDir('media') . DS . 'inky' .DS . 'font' . DS . 'ttf/bold' . DS;
+                            $pathTTF = Mage::getBaseDir('media') . DS . 'a2bizz' .DS . 'font' . DS . 'ttf/bold' . DS;
                         } else if($filename=='filename_italicttf'){
-                            $pathTTF = Mage::getBaseDir('media') . DS . 'inky' .DS . 'font' . DS . 'ttf/italic' . DS;
+                            $pathTTF = Mage::getBaseDir('media') . DS . 'a2bizz' .DS . 'font' . DS . 'ttf/italic' . DS;
                         } else if($filename=='filename_bolditalicttf'){
-                            $pathTTF = Mage::getBaseDir('media') . DS . 'inky' .DS . 'font' . DS . 'ttf/bolditalic' . DS;
+                            $pathTTF = Mage::getBaseDir('media') . DS . 'a2bizz' .DS . 'font' . DS . 'ttf/bolditalic' . DS;
                         } else {
-                            $pathTTF = Mage::getBaseDir('media') . DS . 'inky' .DS . 'font' . DS . 'ttf' . DS;
+                            $pathTTF = Mage::getBaseDir('media') . DS . 'a2bizz' .DS . 'font' . DS . 'ttf' . DS;
                         }
                         
                         $uploader->save($pathTTF, $_FILES[$filename]['name']);
@@ -141,16 +141,16 @@ class A2bizz_Designersoftware_Adminhtml_FontController extends Mage_Adminhtml_Co
                         $fontImgName = $fontImgName . '.png';
                         
                         if($filename=='filename_boldttf'){
-                            $pathTTFImg = Mage::getBaseDir('media') . DS . 'inky' . DS . 'font' . DS . 'image/bold' . DS . $fontImgName;
+                            $pathTTFImg = Mage::getBaseDir('media') . DS . 'a2bizz' . DS . 'font' . DS . 'image/bold' . DS . $fontImgName;
                             $imageName['boldttf_image_name'] = $fontImgName;
                         } else if($filename=='filename_italicttf'){
-                            $pathTTFImg = Mage::getBaseDir('media') . DS . 'inky' . DS . 'font' . DS . 'image/italic' . DS . $fontImgName;
+                            $pathTTFImg = Mage::getBaseDir('media') . DS . 'a2bizz' . DS . 'font' . DS . 'image/italic' . DS . $fontImgName;
                              $imageName['italicttf_image_name'] = $fontImgName;
                         } else if($filename=='filename_bolditalicttf'){
-                            $pathTTFImg = Mage::getBaseDir('media') . DS . 'inky' . DS . 'font' . DS . 'image/bolditalic' . DS . $fontImgName;
+                            $pathTTFImg = Mage::getBaseDir('media') . DS . 'a2bizz' . DS . 'font' . DS . 'image/bolditalic' . DS . $fontImgName;
                              $imageName['bolditalicttf_image_name'] = $fontImgName;
                         } else {
-                            $pathTTFImg = Mage::getBaseDir('media') . DS . 'inky' . DS . 'font' . DS . 'image' . DS . $fontImgName;
+                            $pathTTFImg = Mage::getBaseDir('media') . DS . 'a2bizz' . DS . 'font' . DS . 'image' . DS . $fontImgName;
                             $imageName['ttf_image_name'] = $fontImgName;
                         }
                                                 

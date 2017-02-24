@@ -40,10 +40,10 @@ class A2bizz_Designersoftware_Block_Adminhtml_Font_Edit_Tab_Form extends Mage_Ad
          
          // Image section for TTF files
          $siteUrl = Mage::getBaseUrl('media');
-         $imageUrl = '<img src="' . $siteUrl . 'inky/font/image/' . $font['ttf_image_name'] . '" title="Font Image" alt="Font Image"  />';
-         $imageBoldUrl = '<img src="' . $siteUrl . 'inky/font/image/bold/' . $font['boldttf_image_name'] . '" title="Font Bold Image" alt="Font Bold Image"  />';
-         $imageItalicUrl = '<img src="' . $siteUrl . 'inky/font/image/italic/' . $font['italicttf_image_name'] . '" title="Font Italic Image" alt="Font Italic Image"  />';
-         $imageBoldItalicUrl = '<img src="' . $siteUrl . 'inky/font/image/bolditalic/' . $font['bolditalicttf_image_name'] . '" title="Font Bold-Italic Image" alt="Font Bold-Italic Image"  />';
+         $imageUrl = '<img src="' . $siteUrl . 'a2bizz/font/image/' . $font['ttf_image_name'] . '" title="Font Image" alt="Font Image"  />';
+         $imageBoldUrl = '<img src="' . $siteUrl . 'a2bizz/font/image/bold/' . $font['boldttf_image_name'] . '" title="Font Bold Image" alt="Font Bold Image"  />';
+         $imageItalicUrl = '<img src="' . $siteUrl . 'a2bizz/font/image/italic/' . $font['italicttf_image_name'] . '" title="Font Italic Image" alt="Font Italic Image"  />';
+         $imageBoldItalicUrl = '<img src="' . $siteUrl . 'a2bizz/font/image/bolditalic/' . $font['bolditalicttf_image_name'] . '" title="Font Bold-Italic Image" alt="Font Bold-Italic Image"  />';
       
          
      } else {

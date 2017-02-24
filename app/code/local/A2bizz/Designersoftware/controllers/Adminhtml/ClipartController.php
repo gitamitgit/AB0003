@@ -97,7 +97,7 @@ class A2bizz_Designersoftware_Adminhtml_ClipartController extends Mage_Adminhtml
 							
 					// We set media/files as Default Image Folder for Designer Software Images
 					// The below function will return directory path for saving original Image
-					// it will be like - media/inky/{{controllerName}}/original//{{filename}}
+					// it will be like - media/a2bizz/{{controllerName}}/original//{{filename}}
 					$path = Mage::helper('designersoftware/image')->createModuleImageDirectories('','original');
 					
 					// Logic to generate Dynamic Name for Image and will use the same name every time when image will be entered
